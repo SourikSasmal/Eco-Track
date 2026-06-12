@@ -12,7 +12,7 @@
 
 **Understand. Track. Reduce. 🌱**
 
-*A hackathon project helping individuals take real climate action through personalized insights.*
+*A project helping individuals take real climate action through personalized insights.*
 
 [Live Demo](#) · [Report Bug](../../issues) · [Request Feature](../../issues)
 
