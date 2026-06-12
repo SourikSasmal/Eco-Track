@@ -1,20 +1,20 @@
 const express = require('express');
 const path = require('path');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static assets from the current directory
-app.use(express.static(__dirname));
+// Serve static files (CSS, JS, images) from root
+app.use(express.static(path.join(__dirname)));
 
-// Single Page Application routing fallback
+// Serve images folder explicitly
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
+// All routes serve index.html (SPA fallback)
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
-  console.log(`===================================================`);
-  console.log(` EcoTrack server successfully started!`);
-  console.log(` Live URL: http://localhost:${PORT}`);
-  console.log(` Press Ctrl+C to terminate server execution.`);
-  console.log(`===================================================`);
+  console.log(`✅ EcoTrack running at http://localhost:${PORT}`);
 });
