@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/((?!style.css|app.js|images/).*)", "destination": "/index.html" }
+  ]
+}
