@@ -97,7 +97,7 @@ Built for a hackathon around the problem statement:
 
 | Quiz Screen | Results Screen | Dashboard |
 |:-----------:|:--------------:|:---------:|
-| ![Quiz](images/2.png) | ![Results](images/5.png) | ![Dashboard](images/6.png) |
+| ![Quiz](images/2.png) | ![Results](images/5.png) | ![Dashboard](images/6.png      ) |
 
 ---
 
@@ -153,31 +153,20 @@ All calculations use scientifically grounded emission factors:
 
 ## 🚀 Getting Started
 
-### Option 1 — Open directly (recommended)
-
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ecotrack.git
+git clone https://github.com/your-username/carbon-tracker.git
 
-# Navigate into the folder
-cd ecotrack
+cd carbon-tracker
 
-# Open in browser
-open index.html
-# or just double-click index.html
+# Install dependencies
+npm install
+
+# Start the app
+node server.js
 ```
 
-### Option 2 — Serve locally
-
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve .
-```
-
-Then visit `http://localhost:8000`
+Then visit `http://localhost:3000`
 
 ### Requirements
 - Any modern browser (Chrome, Firefox, Safari, Edge)
@@ -187,14 +176,18 @@ Then visit `http://localhost:8000`
 ---
 
 ## 📁 Project Structure
-
 ```
-ecotrack/
+CARBON-BO.../
 │
-├── index.html          # Entire app — HTML + CSS + JS in one file
-├── README.md           # You are here
-└── assets/             # (optional) screenshots, icons
-    └── screenshots/
+├── images/             # Icons, illustrations, and static assets
+├── node_modules/       # npm dependencies (auto-generated)
+├── app.js              # Core application logic
+├── index.html          # Main entry point
+├── package.json        # Project metadata and dependencies
+├── package-lock.json   # Locked dependency versions
+├── README.md           # Project documentation
+├── server.js           # Local development server
+└── style.css           # Global styles and dark-mode design system
 ```
 
 **JavaScript modules inside `index.html`:**
