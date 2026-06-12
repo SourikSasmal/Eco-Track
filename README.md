@@ -153,20 +153,7 @@ All calculations use scientifically grounded emission factors:
 
 ## 🚀 Getting Started
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/carbon-tracker.git
-
-cd carbon-tracker
-
-# Install dependencies
-npm install
-
-# Start the app
-node server.js
-```
-
-Then visit `http://localhost:3000`
+visit - "eco-track-kappa-woad.vercel.app"
 
 ### Requirements
 - Any modern browser (Chrome, Firefox, Safari, Edge)
